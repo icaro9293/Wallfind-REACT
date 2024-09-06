@@ -1,79 +1,53 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# MOBILE APP FULL-STACK GERENCIAMENTO DE WALLPAPERS 'WALLFIND'
 
-# Getting Started
+# Sobre o projeto
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Projeto de estudo, abordando conceitos de REACT NATIVE, NEXT.js(painel admin para adição e remoção de wallpapers do banco de dados) NODE.js (backend com express.js hospedado com a plataforma VERCEL), banco de dados utilizando MONGO DB e FIREBASE, , feito no android studio, de uma aplicação full-stack de exibição/gerenciamento de wallpapers.
 
-## Step 1: Start the Metro Server
+## Layout mobile
+![Web 1](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss1.jpeg)
+### página inicial com display dos wallpapers, fazendo requisição da API(feito com NODE.js).
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+![Web 2](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss2.jpeg)
+### página de coleções, fazendo a requisição da API das categorias cadastradas no banco de dados.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+![Web 3](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss3.jpeg)
+###página de exibição do wallpapers, com funcionalidades de LIKE, DOWNLOAD e SHARE.
 
-```bash
-# using npm
-npm start
+![Web 4](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss4.jpeg)
+###funcionalidade LIKE.
 
-# OR using Yarn
-yarn start
-```
+![Web 5](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss5.jpeg)
+### página com a coleção de wallpapers classificados com LIKE.
 
-## Step 2: Start your Application
+![Web 6](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss6.jpeg)
+###página de busca, fazendo requisição da API através do framework AXIOS, filtrando a busca com o valor digitado.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+![Web 7](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss7.jpeg)
+###função de busca após filtrar pelo nome.
 
-### For Android
+![Web 8](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss8.jpeg)
+###funcionalidade DOWNLOAD.
 
-```bash
-# using npm
-npm run android
+![Web 9](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss9.jpeg)
+### wallpaper baixado e salvo no diretório de 'downloads' local do dispositivo.
 
-# OR using Yarn
-yarn android
-```
+![Web 10](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss10.jpeg)
+###função de SHARE em funcionamento.
 
-### For iOS
+## Layout painel admin
 
-```bash
-# using npm
-npm run ios
+![Web 11](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss11.png)
+### página inicial de visualização dos wallpapers cadastrados no sistema.
 
-# OR using Yarn
-yarn ios
-```
+![Web 12](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss12.png)
+### página de cadastro de novos wallpapers
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+![Web 13](https://github.com/icaro9293/Wallfind-REACT/blob/main/screenshots/ss13.png)
+###página de cadastro de novas categorias para os wallpapers.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# Tecnologias utilizadas
+## Front end
+- REACT NATIVE / JSX / tailwind / NEXT.JS
+## Back end
+- NODE.js / mongo DB / mongoose / firebase
