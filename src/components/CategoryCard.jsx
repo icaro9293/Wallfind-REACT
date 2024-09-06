@@ -13,7 +13,9 @@ const CategoryCard = ({ item, index }) => {
         <TouchableOpacity style={styles.container} onPress={() => {
             handleNavigate(item)
         }}>
-            <Image source={{ uri: item.image }} style={styles.imagem}></Image>
+            <View style={styles.containerImagem}>
+                <Image source={{ uri: item.image }} style={styles.imagem}></Image>
+            </View>
             <View style={styles.overlay} />
             <View style={styles.textoContainer}>
                 <Text style={styles.texto}>{item.name}</Text>
@@ -27,7 +29,7 @@ export default CategoryCard
 const styles = StyleSheet.create({
     container: {
         marginVertical: 20,
-        // borderRadius: 20
+        borderRadius: 20
     },
     imagem: {
         height: 120,
@@ -37,7 +39,8 @@ const styles = StyleSheet.create({
     },
     overlay: {
         ...StyleSheet.absoluteFillObject,
-        backgroundColor: 'rgba(0,0,0,0.5)'
+        backgroundColor: 'rgba(0,0,0,0.5)',
+        borderRadius: 20
     },
     texto: {
         color: 'white',
@@ -48,5 +51,8 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 50,
         left: 20
+    },
+    containerImagem: {
+        borderRadius: 20
     }
 })

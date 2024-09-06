@@ -48,7 +48,10 @@ const ImageCard = ({ item }) => {
         <TouchableOpacity style={styles.container} onPress={() => {
             handleNavigate(item)
         }}>
-            <Image source={{ uri: item.image }} style={styles.imagem}></Image>
+            <View style={styles.containerImagem}>
+                <Image source={{ uri: item.image }} style={styles.imagem}></Image>
+
+            </View>
             <View style={styles.iconContainer}>
                 <TouchableOpacity onPress={() => {
                     handleLike(item)
@@ -79,17 +82,20 @@ const styles = StyleSheet.create({
     container: {
         height: 300,
         width: '50%',
-        backgroundColor: 'pink',
+        backgroundColor: '#121928',
         // borderWidth: 1,
         // borderColor: 'black',
         borderRadius: 20,
         overflow: 'hidden',
-        marginRight: 8,
+        marginRight: 0,
+        // marginHorizontal: 10,
         marginVertical: 10,
-        resizeMode: 'cover'
+        resizeMode: 'cover',
     },
     imagem: {
-        flex: 1
+        gap: 10,
+        flex: 1,
+        borderRadius: 15
     },
     iconContainer: {
         position: 'absolute',
@@ -99,5 +105,12 @@ const styles = StyleSheet.create({
         // borderWidth: 1,
         // borderColor: 'white',
         justifyContent: 'space-between'
+    },
+    containerImagem: {
+        padding: 10,
+        width: '100%',
+        height: '100%',
+        borderRadius: 15
+        // margin: 10
     }
 })

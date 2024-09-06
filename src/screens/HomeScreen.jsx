@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#121928',
         flex: 1,
-        paddingHorizontal: 20
+        paddingHorizontal: 17,
+        // columnGap: 20
     }
 })
